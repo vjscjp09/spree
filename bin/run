@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## create a sandbox application
+bundle exec rake sandbox
+
+cd /app/sandbox
+rails server -b 0.0.0.0

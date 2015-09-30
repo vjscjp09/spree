@@ -1,0 +1,11 @@
+#!/bin/bash
+## this is a horrific set of deps since we need all the databases to bundle
+apt-get update && apt-get install -yq \
+    git \
+    libpq-dev \
+    libmysqlclient-dev \
+    sqlite3 libsqlite3-dev \
+    nodejs
+
+bundle install
+
